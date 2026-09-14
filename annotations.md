@@ -28,11 +28,11 @@
 | 24 | Gen-Centric Services / Source | 域名与链接页签 | 交互逻辑 | 默认 Domains 展示保存域名；URLs 展示从完整回答中提取并去重的已保存链接。点击链接行打开该域名的来源详情，不直接跳到外部网页。切换页签保留 Top／New／Trending／Losing 选项。 |
 | 25 | Gen-Centric Services / Source | 来源趋势页签 | 业务规则 | 默认 Top，沿用保存页来源顺序。New、Trending、Losing 所需的来源历史没有保存，点击后展示无数据说明，不使用静态总数伪造增减趋势；切回 Top 恢复当前域名／链接视图。 |
 | 26 | Gen-Centric Services / Source | 来源域名列表 | 交互逻辑 | Top 下展示八个域名及 Retrievals，当前不提供分页或表头排序。点击域名行打开来源详情。行旁数量是保存的引用次数，不等于当前十条聊天中的匹配数，也不随聊天筛选变化。 |
-| 27 | Gen-Centric Services / Source | All domains 入口 | 交互逻辑 | 点击 All domains 打开宽版来源列表，显示全部八个保存域名。列表不继承 URLs 或非 Top 视图；点击域名打开详情。 |
-| 28 | Gen-Centric Services / Source | 来源列表展开按钮 | 交互逻辑 | 点击右下角 Expand，与 All domains 打开同一来源列表。弹窗内 Export CSV 导出 Domain、Retrievals 两列，包含八个保存域名，按数据源原顺序输出。 |
+| 27 | Gen-Centric Services / Source | All domains 入口 | 交互逻辑 | 点击 All domains 打开来源分析。默认展示前八个域名，共 312 次引用，占保存页全部 841 次引用的 37.1%；色块面积按这八个域名的引用数计算，占比以 841 为分母。域名列表默认收起，点击 View all available domains 展开。 |
+| 28 | Gen-Centric Services / Source | 来源列表展开按钮 | 交互逻辑 | Expand 与 All domains 打开同一来源分析。点击 AI 平台柱子联动筛选来源色块、数量、占比、域名列表及 CSV；再点同一平台或 Clear platform filter 恢复全平台。平台统计按日期范围内保存聊天的已命名来源计算，不拆分 841 次总引用；缺失平台显示无数据，CSV 禁用。CSV 包含 Scope、Platform、Domain、Retrievals、Share (%)，使用当前筛选结果。来源类型卡片始终注明全平台口径，未提供平台分类明细。 |
 | 29 | Gen-Centric Services / Source | 来源类型分布 | 字段说明 | 展示 You、Corporate、Other、UGC、Competitor、Editorial、Institutional、Reference 的保存比例，总引用数为 841。比例经过展示取整，可能不精确合计 100%；类型划分算法资料未说明。此区为静态展示，没有下钻点击逻辑。 |
-| 30 | Gen-Centric Services / Source | 来源详情统计 | 业务规则 | 详情展示已保存的引用总数，以及十条保存聊天中来源数组含该域名的记录数；两者口径不同。没有已知总数时不展示统计卡。域名存在但未保存完整 URL 时显示说明，不推测链接地址。 |
-| 31 | Gen-Centric Services / Source | 来源详情链接与聊天 | 交互逻辑 | 详情中的完整 URL 在新标签页打开外部网站；关联聊天按来源数组中的域名精确匹配，不继承主列表筛选。点击关联聊天打开完整回答，没有匹配项时展示无关联记录说明。 |
+| 30 | Gen-Centric Services / Source | 来源详情统计 | 业务规则 | 从主列表进入详情，展示保存的引用总数和全部保存聊天的匹配数。从平台筛选结果进入详情，引用数量、完整链接和关联聊天使用当前平台及日期范围内的已保存记录；Named references in sample 区分样本口径。未知完整 URL 显示说明，不推测地址。 |
+| 31 | Gen-Centric Services / Source | 来源详情链接与聊天 | 交互逻辑 | 来源详情中的完整 URL 在新标签页打开外部网站；点击关联聊天打开完整回答，无匹配项则显示说明。从来源分析进入的详情提供 Back to source analysis，返回后保留平台筛选和域名列表展开状态。主列表直接进入来源详情时仍使用全部保存聊天。 |
 | 32 | Gen-Centric Services / Q&A records | 聊天品牌筛选 | 交互逻辑 | 默认 All brands，选择品牌立即按回答文本或提及域名匹配聊天，并回到第 1 页。与模型、来源、特征和日期条件叠加；不改变图表上的品牌选择。 |
 | 33 | Gen-Centric Services / Q&A records | 聊天特征筛选 | 交互逻辑 | 默认 All features，可选 Web search／No web search。以保存记录的特征数组是否非空判断，选择立即生效并回到第 1 页。当前样例可能使 No web search 没有结果，不额外生成记录。 |
 | 34 | Gen-Centric Services / Q&A records | 聊天来源筛选 | 交互逻辑 | 默认 All sources，选项来自已保存聊天的来源域名去重集合。选择后按域名精确匹配来源数组，立即更新结果并回到第 1 页。缺失的额外来源名称不生成筛选项。 |
