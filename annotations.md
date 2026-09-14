@@ -2,7 +2,7 @@
 
 | 编号 | 菜单路径 | 目标区域 | 注记类型 | 注记内容 |
 | --- | --- | --- | --- | --- |
-| 1 | Gen-Centric Services / Overview | 提示词摘要 | 字段说明 | 展示提示词名称、添加时间、主题、Volume、地区和状态。空主题显示横线；Volume 仅保留保存页中的图形示意，没有数值、分档阈值或查询逻辑；地区固定为 United States。Active／Paused 为本地展示状态，未接入真实采集任务。 |
+| 1 | Gen-Centric Services / Overview | 提示词摘要 | 字段说明 | 展示提示词名称、添加时间、主题、Mention Rate、地区和 Intent。空主题显示横线；Mention Rate 仅保留保存页中的图形示意，没有数值、分档阈值或查询逻辑；地区固定为 United States。Active／Paused 为本地展示状态，未接入真实采集任务。 |
 | 2 | Gen-Centric Services / Overview | 添加时间 | 交互逻辑 | 点击“3 mo. ago”，提示该时间相对于原页面保存时约三个月前。不是相对当前打开日期重新计算的时间，也不支持编辑。 |
 | 3 | Gen-Centric Services / Overview | 提示词设置入口 | 交互逻辑 | 点击齿轮打开设置弹窗，并回填当前提示词、主题和状态。该入口可编辑本地展示信息，不修改 Peec 账户中的提示词。 |
 | 4 | Gen-Centric Services / Overview | 提示词设置表单 | 字段说明 | Prompt 必填，最多 300 字符，提交时去除首尾空格；仅空格时停留在输入框。Topic 可空，最多 80 字符并去除首尾空格。Status 仅 Active／Paused，默认回填当前值。原型未定义其他校验或权限条件。 |
