@@ -16,11 +16,11 @@
 | 12 | Gen-Centric Services / Visibility | 重置综合筛选 | 交互逻辑 | Reset filters 清除模型、聊天品牌、来源和特征条件，日期恢复 30 天，页码回到 1，并刷新聊天与图表、关闭弹窗。保留每页条数、排序、列显隐、图表类型。 |
 | 13 | Gen-Centric Services / Visibility | 可见度趋势图 | 业务规则 | 展示七个品牌在五个保存周观测点上的可见度百分比；鼠标移动时显示最近观测点的日期与可见品牌数值，移出后隐藏提示。百分比来自保存页，当前资料没有原始样本分母，不把本地图表视为实时分析结果。 |
 | 14 | Gen-Centric Services / Visibility | 折线与柱状图切换 | 交互逻辑 | 默认折线图，点击对应图标切为柱状图或恢复折线图；保留日期范围，使用保存的周观测点展示全部品牌。仅改变表达形式，不改变保存的观测值。 |
-| 15 | Gen-Centric Services / Sentiment | 品牌排名列表 | 字段说明 | 仅展示品牌、品牌提及率、TOP3 提及率、首位提及率四列，保留七个保险品牌，当前品牌显示“当前品牌”标识。品牌提及率沿用保存的 Visibility 百分比；资料未提供 TOP3 和首位提及率，统一显示“—”，不以 SoV、情感分值或平均位置替代。默认按品牌提及率降序，当前没有分页。 |
+| 15 | Gen-Centric Services / Sentiment | 品牌排名列表 | 字段说明 | 仅展示 Brand、Mention Rate、Top 3 Mention Rate、#1 Mention Rate 四列，保留七个保险品牌，当前品牌显示“Your brand”标识。品牌提及率沿用保存的 Visibility 百分比；资料未提供 TOP3 和首位提及率，统一显示“—”，不以 SoV、情感分值或平均位置替代。默认按品牌提及率降序，当前没有分页。 |
 | 16 | Gen-Centric Services / Sentiment | 品牌排名表头排序 | 交互逻辑 | 点击表头或聚焦后按 Enter 排序；同列再次操作反向，切换列先降序。品牌列按名称，三项提及率按数值；缺失值始终置后，同值及全为空时保持原始记录相对顺序。“—”不是 0%。 |
-| 17 | Gen-Centric Services / Sentiment | 导出品牌排名 | 交互逻辑 | 点击导出图标，再选 Export CSV。导出七个品牌的品牌、品牌提及率、TOP3 提及率、首位提及率四列，顺序与主表当前排序一致；百分比带 %，缺失值为“—”。不导出排名序号、SoV、情感、平均位置或涨跌值。 |
-| 18 | Gen-Centric Services / Sentiment | 展开品牌排名 | 交互逻辑 | 点击“查看更多”打开宽版品牌排行榜，列、数值、当前品牌标识和行顺序均与主表一致。点击记录或聚焦后按 Enter 打开品牌详情；弹窗中的 Export CSV 导出相同四列和顺序。 |
-| 19 | Gen-Centric Services / Sentiment | 查看品牌详情 | 交互逻辑 | 点击品牌行或聚焦后按 Enter，打开详情抽屉，展示域名及品牌提及率、TOP3 提及率、首位提及率。后两项缺失时显示“—”；不展示旧的 SoV、情感、平均位置和涨跌指标。以下为所有品牌的公共规则。 |
+| 17 | Gen-Centric Services / Sentiment | 导出品牌排名 | 交互逻辑 | 点击导出图标，再选 Export CSV。导出七个品牌的 Brand、Mention Rate、Top 3 Mention Rate、#1 Mention Rate 四列，顺序与主表当前排序一致；百分比带 %，缺失值为“—”。不导出排名序号、SoV、情感、平均位置或涨跌值。 |
+| 18 | Gen-Centric Services / Sentiment | 展开品牌排名 | 交互逻辑 | 点击“View more”打开宽版 Brand ranking，列、数值、当前品牌标识和行顺序均与主表一致。点击记录或聚焦后按 Enter 打开品牌详情；弹窗中的 Export CSV 导出相同四列和顺序。 |
+| 19 | Gen-Centric Services / Sentiment | 查看品牌详情 | 交互逻辑 | 点击品牌行或聚焦后按 Enter，打开详情抽屉，展示域名及 Mention Rate、Top 3 Mention Rate、#1 Mention Rate。后两项缺失时显示“—”；不展示旧的 SoV、情感、平均位置和涨跌指标。以下为所有品牌的公共规则。 |
 | 20 | Gen-Centric Services / Sentiment | 品牌详情与关联聊天 | 业务规则 | 品牌详情中的关联聊天按提及域名包含该品牌，或回答原文包含品牌名称筛选全部保存聊天；不继承聊天列表的筛选和分页。点击关联记录会替换为完整聊天抽屉。指标保持保存页数值，不随关联聊天数量重算。 |
 | 21 | Gen-Centric Services / Source | 域名与链接页签 | 交互逻辑 | 默认 Domains 展示保存域名；URLs 展示从完整回答中提取并去重的已保存链接。点击链接行打开该域名的来源详情，不直接跳到外部网页。切换页签保留 Top／New／Trending／Losing 选项。 |
 | 22 | Gen-Centric Services / Source | 来源趋势页签 | 业务规则 | 默认 Top，沿用保存页来源顺序。New、Trending、Losing 所需的来源历史没有保存，点击后展示无数据说明，不使用静态总数伪造增减趋势；切回 Top 恢复当前域名／链接视图。 |
