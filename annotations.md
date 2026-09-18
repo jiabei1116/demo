@@ -3,7 +3,7 @@
 | 编号 | 菜单路径 | 目标区域 | 注记类型 | 注记内容 |
 | --- | --- | --- | --- | --- |
 | 1 | Gen-Centric Services / Visibility | 日期范围选择 | 业务规则 | 默认 Last 30 days，可选 24 小时、7／14／30／90 天。按保存记录距保存日的天数筛选聊天，并回到第 1 页；图表在不超过 7 天时取最后 1 个周观测点、不超过 14 天取 2 个，其余取全部 5 个。90 天会提示仅有 30 天图表历史；品牌汇总和来源总计不重算。 |
-| 2 | Gen-Centric Services / Overview | 提示词摘要 | 字段说明 | 展示提示词名称、添加时间、主题、Mention Rate、地区和 Intent。空主题显示横线；Mention Rate 仅保留保存页中的图形示意，没有数值、分档阈值或查询逻辑；地区固定为 United States。Active／Paused 为本地展示状态，未接入真实采集任务。 |
+| 2 | Gen-Centric Services / Overview | 提示词摘要 | 字段说明 | 展示提示词名称、添加时间、主题、Mention Rate、地区和 Intent。当前示例中 Mention Rate 为 92%，Intent 为 Competitor。空主题显示横线；地区固定为 United States。监测状态未接入真实采集任务。 |
 | 3 | Gen-Centric Services / Overview | 添加时间 | 交互逻辑 | 点击“3 mo. ago”，提示该时间相对于原页面保存时约三个月前。不是相对当前打开日期重新计算的时间，也不支持编辑。 |
 | 4 | Gen-Centric Services / Visibility | Mention Rate 趋势图 | 业务规则 | 展示七个品牌在五个保存周观测点上的 Mention Rate 百分比；鼠标移动时显示最近观测点的日期与可见品牌数值，移出后隐藏提示。百分比来自保存页，当前资料没有原始样本分母，不把本地图表视为实时分析结果。 |
 | 5 | Gen-Centric Services / Visibility | 折线与柱状图切换 | 交互逻辑 | 默认折线图，点击对应图标切为柱状图或恢复折线图；保留日期范围，使用保存的周观测点展示全部品牌。仅改变表达形式，不改变保存的观测值。 |
