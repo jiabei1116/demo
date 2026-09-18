@@ -15,7 +15,7 @@
 | 11 | Gen-Centric Services / Source | 域名与链接页签 | 交互逻辑 | 默认 Domains 展示保存域名；URLs 展示从完整回答中提取并去重的已保存链接。点击链接行打开该域名的来源详情，不直接跳到外部网页。来源趋势筛选暂仅保留 Top。 |
 | 12 | Gen-Centric Services / Source | All domains 入口 | 交互逻辑 | 点击 All domains 打开来源分析。默认展示前八个域名，共 312 次引用，占保存页全部 841 次引用的 37.1%；色块面积按这八个域名的引用数计算，占比以 841 为分母。域名列表默认收起，点击 View all available domains 展开。 |
 | 13 | Gen-Centric Services / Source | 来源域名列表 | 交互逻辑 | Top 下展示八个域名及 Retrievals，当前不提供分页或表头排序。点击域名行打开来源详情。行旁数量是保存的引用次数，不等于当前十条聊天中的匹配数，也不随聊天筛选变化。 |
-| 14 | Gen-Centric Services / Source | 来源列表展开按钮 | 交互逻辑 | Expand 与 All domains 打开同一来源分析。点击 AI 平台柱子联动筛选来源色块、数量、占比、域名列表及 CSV；再点同一平台或 Clear platform filter 恢复全平台。平台统计按日期范围内保存聊天的已命名来源计算，不拆分 841 次总引用；缺失平台显示无数据，CSV 禁用。CSV 包含 Scope、Platform、Domain、Retrievals、Share (%)，使用当前筛选结果。来源类型卡片始终注明全平台口径，未提供平台分类明细。 |
+| 14 | Gen-Centric Services / Source | 来源列表展开按钮 | 交互逻辑 | 点击 Expand 打开完整来源列表，仅展示图一中的 8 个域名及 Retrievals：tigerless.com 77、smcovered.com 66、china.com 59、dealmoon.com 29、tom.com 23、fivyex.com 22、bkmedia.cn 18、xnnews.com.cn 18。列表不展示来源分析图表、平台筛选或 CSV；点击域名仍可打开对应来源详情。 |
 | 15 | Gen-Centric Services / Source | 来源类型分布 | 字段说明 | 展示 You、Corporate、Other、UGC、Competitor、Editorial、Institutional、Reference 的保存比例，总引用数为 841。比例经过展示取整，可能不精确合计 100%；类型划分算法资料未说明。此区为静态展示，没有下钻点击逻辑。 |
 | 16 | Gen-Centric Services / Q&A records | 聊天记录与总数 | 业务规则 | 当前仅有十条完整保存聊天；原页面的 90 条总量不代表本地可读取 90 条。首次进入按保存记录顺序，未主动设置默认排序字段；显示摘要、模型、提及品牌、来源、品牌位置和相对保存日的时间。额外的 +N 为已保存计数，缺少名称时不能展开补全。 |
 | 17 | Gen-Centric Services / Q&A records | 导出聊天 | 交互逻辑 | 工具栏仅保留 Export 按钮。点击该按钮选择 CSV 或 JSON。导出当前全部筛选结果及当前排序，不只导出当前页。CSV 包含模型、完整回答、已知品牌域名、已知来源域名、位置、创建时间；JSON 保留记录的原有字段。导出行为不受当前分页影响。 |
