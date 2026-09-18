@@ -9,9 +9,9 @@
 | 5 | Gen-Centric Services / Visibility | 折线与柱状图切换 | 交互逻辑 | 默认折线图，点击对应图标切为柱状图或恢复折线图；保留日期范围，使用保存的周观测点展示全部品牌。仅改变表达形式，不改变保存的观测值。 |
 | 6 | Gen-Centric Services / Sentiment | 品牌排名列表 | 字段说明 | 仅展示 Brand、Mention Rate、Top 3 Mention Rate、#1 Mention Rate 四列，保留七个保险品牌，当前品牌显示“Your brand”标识。品牌提及率沿用保存的 Visibility 百分比；资料未提供 TOP3 和首位提及率，统一显示“—”，不以 SoV、情感分值或平均位置替代。默认按品牌提及率降序，当前没有分页。 |
 | 7 | Gen-Centric Services / Sentiment | 导出品牌排名 | 交互逻辑 | 点击导出图标，再选 Export CSV。导出七个品牌的 Brand、Mention Rate、Top 3 Mention Rate、#1 Mention Rate 四列，顺序与主表当前排序一致；百分比带 %，缺失值为“—”。不导出排名序号、SoV、情感、平均位置或涨跌值。 |
-| 8 | Gen-Centric Services / Sentiment | 展开品牌排名 | 交互逻辑 | 点击“View more”打开宽版 Brand ranking，列、数值、当前品牌标识和行顺序均与主表一致。点击记录或聚焦后按 Enter 打开品牌详情；弹窗中的 Export CSV 导出相同四列和顺序。 |
+| 8 | Gen-Centric Services / Sentiment | 展开品牌排名 | 交互逻辑 | 当前版本直接在本页展示完整品牌排名；View more 入口保留为不可用状态，不再打开额外交互页。排名表仍支持表头排序和顶部导出。 |
 | 9 | Gen-Centric Services / Sentiment | 品牌排名表头排序 | 交互逻辑 | 点击表头或聚焦后按 Enter 排序；同列再次操作反向，切换列先降序。品牌列按名称，三项提及率按数值；缺失值始终置后，同值及全为空时保持原始记录相对顺序。“—”不是 0%。 |
-| 10 | Gen-Centric Services / Sentiment | 查看品牌详情 | 交互逻辑 | 点击品牌行或聚焦后按 Enter，打开详情抽屉，展示域名及 Mention Rate、Top 3 Mention Rate、#1 Mention Rate。后两项缺失时显示“—”；不展示旧的 SoV、情感、平均位置和涨跌指标。以下为所有品牌的公共规则。 |
+| 10 | Gen-Centric Services / Sentiment | 查看品牌详情 | 交互逻辑 | 当前品牌排名行仅用于展示数据，点击或键盘聚焦不会打开详情抽屉；品牌详情仍可从其他品牌入口进入。 |
 | 11 | Gen-Centric Services / Source | 域名与链接页签 | 交互逻辑 | 默认 Domains 展示保存域名；URLs 展示从完整回答中提取并去重的已保存链接。点击链接行打开该域名的来源详情，不直接跳到外部网页。来源趋势筛选暂仅保留 Top。 |
 | 12 | Gen-Centric Services / Source | All domains 入口 | 交互逻辑 | 点击 All domains 打开来源分析。默认展示前八个域名，共 312 次引用，占保存页全部 841 次引用的 37.1%；色块面积按这八个域名的引用数计算，占比以 841 为分母。域名列表默认收起，点击 View all available domains 展开。 |
 | 13 | Gen-Centric Services / Source | 来源域名列表 | 交互逻辑 | Top 下展示八个域名及 Retrievals，当前不提供分页或表头排序。点击域名行打开来源详情。行旁数量是保存的引用次数，不等于当前十条聊天中的匹配数，也不随聊天筛选变化。 |

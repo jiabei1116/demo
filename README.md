@@ -26,9 +26,9 @@ Query fanouts 与 Common terms 暂不实现，相关查询入口及六条标注�
 
 可见度图表右上角的日／周／月切换和更多操作入口已移除；使用保存的周观测点，保留日期筛选、悬停提示及折线／柱状图切换。
 
-品牌排行榜对齐四列：品牌、品牌提及率、TOP3 提及率、首位提及率。保留保险品牌，缺失的后两项以“—”显示；移除排名序号、旧指标、涨跌值及变化设置。查看更多、品牌详情、CSV 与相同指标保持一致。
+品牌排行榜对齐四列：品牌、品牌提及率、TOP3 提及率、首位提及率。保留保险品牌，缺失的后两项以“—”显示；移除排名序号、旧指标、涨跌值及变化设置。排名行和 View more 不再打开额外交互页，顶部 CSV 导出保留。
 
-品牌排行榜界面、详情和 CSV 列名使用英文：Brand、Mention Rate、Top 3 Mention Rate、#1 Mention Rate；当前品牌标识为 Your brand，展开入口为 View more。
+品牌排行榜列名使用英文：Brand、Mention Rate、Top 3 Mention Rate、#1 Mention Rate；当前品牌标识为 Your brand，View more 入口保留为不可用状态。
 
 提示词摘要右上角的设置按钮及对应标注已移除。
 
