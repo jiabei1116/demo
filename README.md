@@ -40,4 +40,4 @@ Query fanouts 与 Common terms 暂不实现，相关查询入口及六条标注�
 
 图表标题新增指标下拉框，可切换 Mention Rate、Top 3 Mention Rate 和 #1 Mention Rate；当前保存快照未提供后两项时间序列时显示空状态提示。
 
-可见度与 Brand ranking 卡片下方新增全宽 AI 平台品牌提及率对比图，支持平台图例、悬停明细及折线／柱状图切换。
+可见度与 Brand ranking 卡片下方新增左右双栏 AI 平台模块，左侧为品牌提及率对比图，右侧为对应的平台排名表，支持平台图例、悬停明细及折线／柱状图切换。
